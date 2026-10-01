@@ -36,3 +36,6 @@ st.subheader("Temp over time")
 fig=px.line(filtered,x="time",y="temperature_c",color="location_name")
 fig.update_xaxes(tickformat="%b %d %H:%M")
 st.plotly_chart(fig,use_container_width=True)
+
+st.text("This is my dataframe")
+st.dataframe(df_weather)#shows dataframe
